@@ -25,12 +25,14 @@ switch (valor) {
             console.log("Salario mínimo: ".padEnd(59, '.') + "R$ " + wages[i] + ",00");    
         }
         break
+
     case '2':
         for (let i = 0; i < years.length; i++) {
             console.log("\nAno: ".padEnd(60, '.') + years[i]);
             console.log("Infação IPCA: ".padEnd(59, '.') + (inflationRates_ipca[i]/divider).toFixed(2).replace('.', ',') + "%"); 
         }
         break
+
     case '3':
         for (let i = 0; i < years.length; i++) {
             console.log("\nAno: ".padEnd(60, '.') + years[i]);
@@ -42,6 +44,8 @@ switch (valor) {
             }
             console.log("Infação IPCA: ".padEnd(59, '.') + (inflationRates_ipca[i]/divider).toFixed(2).replace('.', ',') + "%");     
         }
+        break
+        
     default:
         console.log("Opção Inválida!");
 
